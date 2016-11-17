@@ -1,5 +1,5 @@
 # android-UI
-- 图片支持fresco(TODO)
+- 图片支持fresco
 - android recycleview
   - 纵向(TODO)
   - 横向(TODO)
