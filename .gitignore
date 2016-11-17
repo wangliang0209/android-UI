@@ -1,0 +1,27 @@
+.git/
+
+local.properties
+signing.properties
+
+# grandle
+build/
+.gradle/
+.idea/
+*.iml
+local.properties
+*.apk
+gradle/
+gradlew
+gradlew.bat
+.DS_Store
+
+# eclipse
+.classpath
+.project
+.settings/
+
+# sh
+check-branch.sh
+auto_builder/
+*.tar.gz
+auto_build_external_config.sh
