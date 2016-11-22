@@ -1,1 +1,1 @@
-include ':app', ':fresco', ':baselib'
+include ':app', ':fresco', ':baselib', ':banner'
