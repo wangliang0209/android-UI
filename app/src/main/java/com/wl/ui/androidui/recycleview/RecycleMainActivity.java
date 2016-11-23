@@ -54,6 +54,11 @@ public class RecycleMainActivity extends BaseActivity {
         item.setContent("普通纵向List");
         item.setClazz(RecycleVerticalListActivity.class);
         mList.add(item);
+
+        item = new MainItem();
+        item.setContent("普通横向List");
+        item.setClazz(RecycleHorListActivity.class);
+        mList.add(item);
     }
 
 
