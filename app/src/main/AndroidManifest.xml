@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".recycleview.RecycleMainActivity" />
         <activity android:name=".tab.TabMainActivity" />
+        <activity android:name=".recycleview.RecycleVerticalListActivity" />
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 

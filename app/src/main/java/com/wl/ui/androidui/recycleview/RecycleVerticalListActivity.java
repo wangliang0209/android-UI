@@ -1,14 +1,11 @@
 package com.wl.ui.androidui.recycleview;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.wl.ui.androidui.R;
 import com.wl.ui.androidui.recycleview.adapter.MainAdapter;
 import com.wl.ui.androidui.recycleview.entity.MainItem;
@@ -20,10 +17,10 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 /**
- * Created by wangliang on 16-11-18.
+ * Created by wangliang on 16-11-23.
  */
 
-public class RecycleMainActivity extends BaseActivity {
+public class RecycleVerticalListActivity extends BaseActivity {
 
     private RecyclerView mRv;
     private List<MainItem> mList = new ArrayList<>();
@@ -31,30 +28,22 @@ public class RecycleMainActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycle_main);
-
-        initActionBarWithBack("RecycleView Demo");
+        setContentView(R.layout.activity_recycle_vertical_list);
+        initActionBarWithBack("纵向Recycle List Demo");
         mRv = ButterKnife.findById(this, R.id.rv_list);
         mRv.setLayoutManager(new LinearLayoutManager(this));
         initData();
-        BaseQuickAdapter adapter = new MainAdapter(R.layout.recycle_main_item_view, mList);
+        BaseQuickAdapter adapter = new MainAdapter(R.layout.recycle_vertical_item_view, mList);
         adapter.openLoadAnimation();
-        mRv.addOnItemTouchListener(new OnItemClickListener() {
-            @Override
-            public void SimpleOnItemClick(BaseQuickAdapter baseQuickAdapter, View view, int position) {
-                Intent intent = new Intent(RecycleMainActivity.this, mList.get(position).getClazz());
-                startActivity(intent);
-            }
-        });
         mRv.setAdapter(adapter);
+
     }
 
     private void initData() {
-        MainItem item = new MainItem();
-        item.setContent("普通纵向List");
-        item.setClazz(RecycleVerticalListActivity.class);
-        mList.add(item);
+        for (int i = 0; i < 20; i++) {
+            MainItem item = new MainItem();
+            item.setContent("item:" + (i + 1));
+            mList.add(item);
+        }
     }
-
-
 }
