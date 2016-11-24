@@ -5,7 +5,6 @@
 - android recycleview
   - 纵向
   - 横向
-  - gradview效果(TODO)
+  - gradview效果
   - 复杂布局类型(TODO)
 - 下拉刷新 上拉刷新(TODO)
-
