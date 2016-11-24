@@ -61,8 +61,13 @@ public class RecycleMainActivity extends BaseActivity {
         mList.add(item);
 
         item = new MainItem();
-        item.setContent("普通Grid");
+        item.setContent("Grid");
         item.setClazz(RecycleGridActivity.class);
+        mList.add(item);
+
+        item = new MainItem();
+        item.setContent("复杂布局");
+        item.setClazz(RecycleMultiActivity.class);
         mList.add(item);
     }
 
