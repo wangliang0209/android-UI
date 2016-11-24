@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.wl.ui.androidui.R;
 import com.wl.ui.androidui.recycleview.adapter.HorAdapter;
-import com.wl.ui.androidui.recycleview.entity.ImageItem;
+import com.wl.ui.androidui.recycleview.entity.HorItem;
 import com.wl.ui.baselib.BaseActivity;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 public class RecycleHorListActivity extends BaseActivity {
 
     private RecyclerView mRv;
-    private List<ImageItem> mList = new ArrayList<>();
+    private List<HorItem> mList = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class RecycleHorListActivity extends BaseActivity {
 
     private void initData() {
         for (int i = 0; i < 200; i++) {
-            ImageItem item = new ImageItem();
+            HorItem item = new HorItem();
             item.setId(i+1);
             item.setUrl("http://img.taopic.com/uploads/allimg/121017/234940-12101FR22825.jpg");
             mList.add(item);

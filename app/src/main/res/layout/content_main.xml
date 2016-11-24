@@ -19,6 +19,12 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="@string/btn_fresco_demo"/>
+    <Button android:id="@+id/btn_glide_entrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:text="@string/btn_glide_demo"/>
 
     <Button android:id="@+id/btn_recycle_entrance"
         android:layout_width="wrap_content"

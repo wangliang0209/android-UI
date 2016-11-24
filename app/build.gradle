@@ -37,4 +37,5 @@ dependencies {
     compile 'org.xutils:xutils:3.2.2'
     compile project(':banner')
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.6.1'
+    compile project(':glide')
 }

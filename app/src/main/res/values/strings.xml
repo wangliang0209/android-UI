@@ -3,6 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="btn_fresco_demo">Fresco Demo</string>
     <string name="btn_recycle_demo">Recycle Demo</string>
+    <string name="btn_glide_demo">Glide Demo</string>
     <string name="btn_refresh">下拉刷新 Demo</string>
     <string name="btn_tab">Tab Demo</string>
     <string name="open">打开</string>

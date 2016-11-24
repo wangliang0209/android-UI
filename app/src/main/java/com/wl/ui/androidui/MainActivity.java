@@ -14,6 +14,7 @@ import com.wl.ui.androidui.recycleview.RecycleMainActivity;
 import com.wl.ui.androidui.tab.TabMainActivity;
 import com.wl.ui.baselib.BaseActivity;
 import com.wl.ui.fresco.FrescoMainActivity;
+import com.wl.ui.glide.GlideMainActivity;
 
 public class MainActivity extends BaseActivity {
 
@@ -45,6 +46,14 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TabMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_glide_entrance).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GlideMainActivity.class);
                 startActivity(intent);
             }
         });

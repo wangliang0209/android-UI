@@ -4,7 +4,7 @@ package com.wl.ui.androidui.recycleview.entity;
  * Created by wangliang on 16-11-23.
  */
 
-public class ImageItem {
+public class HorItem {
     private String url;
     private int id;
 
