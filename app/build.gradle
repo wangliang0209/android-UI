@@ -38,4 +38,5 @@ dependencies {
     compile project(':banner')
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.6.1'
     compile project(':glide')
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
 }

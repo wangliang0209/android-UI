@@ -8,4 +8,5 @@
     <string name="btn_tab">Tab Demo</string>
     <string name="open">打开</string>
     <string name="close">关闭</string>
+    <string name="no_data">没有数据</string>
 </resources>

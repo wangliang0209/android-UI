@@ -25,6 +25,8 @@
         <activity android:name=".recycleview.RecycleHorListActivity" />
         <activity android:name=".recycleview.RecycleGridActivity" />
         <activity android:name=".recycleview.RecycleMultiActivity" />
+
+        <activity android:name=".refresh.RefreshMainActivity" />
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 

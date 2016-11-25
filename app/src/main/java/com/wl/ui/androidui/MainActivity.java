@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.wl.ui.androidui.recycleview.RecycleMainActivity;
+import com.wl.ui.androidui.refresh.RefreshMainActivity;
 import com.wl.ui.androidui.tab.TabMainActivity;
 import com.wl.ui.baselib.BaseActivity;
 import com.wl.ui.fresco.FrescoMainActivity;
@@ -54,6 +55,14 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, GlideMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_refresh_entrance).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RefreshMainActivity.class);
                 startActivity(intent);
             }
         });
