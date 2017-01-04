@@ -31,9 +31,16 @@ public class TabMainActivity extends BaseActivity {
         adapter.addFragment(new ExampleFragment(), "first");
         adapter.addFragment(new ExampleFragment(), "second");
         adapter.addFragment(new ExampleFragment(), "third");
+        adapter.addFragment(new ExampleFragment(), "four");
+        adapter.addFragment(new ExampleFragment(), "five");
+        adapter.addFragment(new ExampleFragment(), "six");
+        adapter.addFragment(new ExampleFragment(), "seven");
+        adapter.addFragment(new ExampleFragment(), "eight");
+        adapter.addFragment(new ExampleFragment(), "nine");
         pager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         tabLayout.setupWithViewPager(pager);
     }
 
