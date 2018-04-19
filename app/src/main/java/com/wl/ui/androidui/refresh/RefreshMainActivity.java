@@ -52,7 +52,7 @@ public class RefreshMainActivity extends BaseActivity implements BaseQuickAdapte
         final PtrFrameLayout ptrFrameLayout = (PtrFrameLayout) findViewById(R.id.fragment_ptr_home_ptr_frame);
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_list);
 
-        initPtrFrameLayout(ptrFrameLayout, STYPE_NORMAL);
+        initPtrFrameLayout(ptrFrameLayout, STYPE_STORE);
 
         ptrFrameLayout.setPtrHandler(new PtrHandler() {
             @Override
