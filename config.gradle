@@ -1,0 +1,4 @@
+//获取方式 rootProject.ext.android["buildToolsVersion"]
+ext.versions = [
+        buildToolsVersion       : "29.0.2"
+]
